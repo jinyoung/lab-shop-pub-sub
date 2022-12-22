@@ -1,9 +1,11 @@
 package labshoppubsub.external;
 
-import java.util.Date;
-import java.util.List;
 import javax.persistence.*;
+import java.util.List;
+import java.util.Date;
 import lombok.Data;
 
 @Data
-public class OrderCommand {}
+public class OrderCommand {
+
+}

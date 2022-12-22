@@ -1,10 +1,12 @@
 package labshoppubsub.domain;
 
-import java.util.*;
 import labshoppubsub.domain.*;
 import labshoppubsub.infra.AbstractEvent;
+import java.util.*;
 import lombok.*;
 
+
+//<<< DDD / Domain Event
 @Data
 @ToString
 public class OrderPlaced extends AbstractEvent {
@@ -14,13 +16,11 @@ public class OrderPlaced extends AbstractEvent {
     private Integer qty;
     private String customerId;
 
-    public OrderPlaced(Order aggregate) {
+    public OrderPlaced(Order aggregate){
         super(aggregate);
     }
-
-    public OrderPlaced() {
+    public OrderPlaced(){
         super();
     }
-    // keep
-
 }
+//>>> DDD / Domain Event
